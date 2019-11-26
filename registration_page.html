@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="design1_styles.css">
+  <title>NYSL Registration Form|NYSL</title>
+</head>
+
+<body>
+  
+  <header>
+    <div class="NYSL">
+      <h1>Northside Youth Soccer League</h1>   
+    </div>
+  </header>
+
+  <img src="../img/Youth-Soccer2.png" class="background_image" alt="children playing soccer in blue and red">
+    
+  <main>
+    <h2>Registration Form</h2>
+
+    <div class="div1">
+      <img src="../img/nysl_logo.png" class="logo" alt="Northside Youth Soccor League Logo, round logo with football in the middle, green and two girls playing football">
+    </div>
+
+    <nav>
+        <ul class="menu">
+            <li class="links"><a href="index.html">Home</a></li>
+            <li class="links"><a href="about_nysl.html">About NYSL</a></li>
+            <li class="links"><a href="contact.html">Contact</a></li>
+            <li class="links"><a href="rules_&_policies_page.html">Rules & Policies</a></li>
+            <li class="links"><a href="game_info.html">Game Information</a></li>
+            <li class="links"><a href="registration_page.html">Registration</a></li>
+        </ul>
+    </nav>
+
+        <article class="registration_form">
+            <form action="show_data.html">
+                <label for="first_name">Player's First Name:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+                <br><br>
+                <label for="street_address">Street Address:</label>
+                <input type="text" id="street_address" name="street_address" placeholder="Enter your street name" required>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                <br><br>
+                <label for="zip_code">Zip Code:</label>
+                <input type="text" id="zip_code" name="zip_code" placeholder="Enter your zip code" required>
+                <label for="birthday">Birth Date:</label>
+                <input type="text" id="birthday" name="birthday" placeholder=" mm/dd/yyyy" required>
+                <p>Select your gender:</p>
+                <form action="show_data.html">
+                    <input type="radio" name="gender" id="male" required value="male">Male
+                    <input type="radio" name="gender" id="female" required value="female">Female
+                    <input type="radio" name="gender" id="other" required value="other">Other
+                <p>Grade:</p>
+                <form action="show_data.html">
+                    <input type="radio" name="grade" id="pre-school" required value="pre-school">Pre-School
+                    <input type="radio" name="grade" id="1st" required value="1st">1st
+                    <input type="radio" name="grade" id="2nd" required value="2nd">2nd
+                    <input type="radio" name="grade" id="3rd" required value="3rd">3rd
+                    <input type="radio" name="grade" id="4th" required value="4th">4th
+                    <input type="radio" name="grade" id="5th" required value="4th">5th
+                <br><br>
+                <label for="parent/guardian">Parent / Guardian:</label>
+                <input type="text" id="parent/guardian" name="parent/guardian" placeholder=" Enter name of guardian" required>
+                <label for="phone">Contact Phone:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your contact number" required><br><br>
+                <label for="email">Enter your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                <label required for="question">First Closest:</label>
+                  <select name="question" id="question">
+                      <option value="q1">None</option>
+                      <option value="q1">AJ Katzenmaier</option>
+                      <option value="q2">Marjorie P Hart</option>
+                      <option value="q3">Greenbay</option>
+                      <option value="q4">North Elementary</option>
+                      <option value="q5">Howard A Yeager</option>
+                      <option value="q6">South Elementary</option>
+                  </select> 
+                  <label required for="question2">Second Closest:</label>
+                  <select name="question2" id="question2">
+                      <option value="q7">None</option>
+                      <option value="q8">AJ Katzenmaier</option>
+                      <option value="q9">Marjorie P Hart</option>
+                      <option value="q10">Greenbay</option>
+                      <option value="q11">North Elementary</option>
+                      <option value="q12">Howard A Yeager</option>
+                      <option value="q13">South Elementary</option>
+                  </select> 
+              
+                <!-- Using Tables
+               <p>Which elementary schools do you live near?</p>
+               <table>
+                  <tr>
+                    <th>First Closest School:</th>
+                    <th>Second Closest School:</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <form action="show_data.html">
+                          <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">AJ Katzenmaier
+                          <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">Marjorie P Hart<br>
+                          <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">Greenbay
+                          <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">North Elementary<br>
+                          <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">Howard A Yeager
+                          <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">South Elementary<br>
+                    </td>
+                    <td>
+                        <form action="show_data.html">
+                            <input type="radio" name="second_closest_school" id="second_closest_school" required value="second_closest_school">AJ Katzenmaier
+                            <input type="radio" name="second_closest_school" id="second_closest_school" required value="second_closest_school">Marjorie P Hart<br>
+                            <input type="radio" name="second_closest_school" id="second_closest_school" required value="second_closest_school">Greenbay
+                            <input type="radio" name="second_closest_school" id="second_closest_school" required value="second_closest_school">North Elementary<br>
+                            <input type="radio" name="second_closest_school" id="second_closest_school" required value="second_closest_school">Howard A Yeager
+                            <input type="radio" name="second_closest_school" id="second_closest_school" required value="second_closest_school">South Elementary<br>                                 
+                    </td>
+                  </tr>
+                </table>-->
+                <p>What position(s) do you normally play? (check all that apply)</p>
+                <table>
+                    <td>
+                        <form required action="show_data.html">
+                            <input type="radio" name="position1" id="position" value="position">Forward
+                            <input type="radio" name="position2" id="position" value="position">Midfield<br>
+                            <input type="radio" name="position3" id="position" value="position">Defense
+                            <input type="radio" name="position4" id="position" value="position">Goalkeeper
+                            
+                      </td>
+                </table>
+
+                <br><br>
+                <input type="submit" value="Submit the form">
+            </form>
+        </article>
+  </main>
+
+</body>
+</html>

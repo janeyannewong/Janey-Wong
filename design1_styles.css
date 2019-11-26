@@ -1,0 +1,208 @@
+html {
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 100%;
+  }
+
+/* To rid borders from a web page */
+html, body, div, header, h1/*main*/ {
+  padding: 0px;
+  margin: 0px;
+  margin-top: -2%;
+  border: 0px none;
+  width: 100%;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* Top Background Image - Responsive*/
+.background_image { 
+  /*background-repeat: no-repeat;*/
+  background-position: top;
+  position: static;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+/*Northside Youth Soccer League Title*/
+h1 {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 70px;
+}
+
+
+/* Upcoming Events Title*/
+h2{
+  background-color: black;
+  color: white;
+  margin: 0px;
+  height: 40px;
+  text-align: center;
+  padding-top: 8px;
+  margin-top: -5px;
+  position: relative;
+  top: 0px;
+}
+
+/*logo*/
+.div1 {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 125px;
+}
+.logo{
+  width:20%;
+}
+
+/* Linked Navigation*/
+.menu {
+  position: relative;
+  bottom: 150px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.links{
+  padding: 20px;
+  position: relative;
+  top: -90px;
+}
+
+.contact{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact_nav {
+  position: relative;
+  bottom: 132px;
+}
+
+/* List types*/
+.square{
+  list-style-type: square;
+}
+
+.circle{
+  list-style-type: circle;
+}
+
+/* Remove Bullet Points from Lists*/
+.menu, .remove_points {
+  list-style-type: none; 
+}
+
+
+/*Article Section*/
+/*index.html*/
+.date {
+  position: relative;
+  top: -580px;
+  left: 300px;
+  width: 400px;
+ }
+
+/*contact.html*/
+ .date2 {
+  position: relative;
+  top: -590px;
+  left: 300px;
+  width: 400px;
+ }
+
+ /*about_nysl.html*/
+ .date3{
+  position: relative;
+  top: -580px;
+  left: 300px;
+  width: 400px;
+ }
+ 
+/*index.html*/
+ .event {
+   position: relative;
+   top: -580px;
+   left: 320px;
+   width: 600px;
+ }
+
+/*contact.html*/ 
+ .event2 {
+   position: relative;
+   top: -590px;
+   left: 300px;
+   width: 600px;
+ }
+
+ /*about_nysl.html*/
+ .event3 {
+   position: relative;
+   top: -580px;
+   left: 320px;
+   width: 600px;
+ }
+
+ .about_nysl_body {
+   width: 400px;
+   position: relative;
+ }
+
+ /*Rules & Policies Page / Game Info Page / Registration Page*/
+ .rules_policy, .game_info {
+   max-width: 100%;
+   width: 1200px;
+   margin: 80px auto;
+   padding: 0 300px;
+   box-sizing: border-box;
+   position: relative;
+   top: -640px;
+ }
+
+ .registration_form {
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding-right: 100px;
+  padding-left: 240px;
+  box-sizing: border-box;
+  position: relative;
+  top: -640px;
+}
+
+/* Game Info Page*/
+/* Italic Title "all games played on saturday"*/
+.game_info_h4 {
+  font-style: italic;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+th{
+ text-decoration: underline;
+}
+
+th, td{
+ padding-right: 40px;
+}
+
+.game_info_email{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 19px;
+}
+
+/*Registration Form Page*/
+article{
+  z-index: 2;
+}
+
