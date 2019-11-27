@@ -203,6 +203,22 @@ th, td{
 
 /*Registration Form Page*/
 article{
-  z-index: 2;
+  z-index: 4;
 }
 
+.shorts {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 115px;
+}
+
+.permission {
+  position: relative;
+  bottom: 70px;
+}
+
+.submit {
+  position: relative;
+  bottom: 60px;
+}

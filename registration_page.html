@@ -51,12 +51,10 @@
                 <label for="birthday">Birth Date:</label>
                 <input type="text" id="birthday" name="birthday" placeholder=" mm/dd/yyyy" required>
                 <p>Select your gender:</p>
-                <form action="show_data.html">
                     <input type="radio" name="gender" id="male" required value="male">Male
                     <input type="radio" name="gender" id="female" required value="female">Female
                     <input type="radio" name="gender" id="other" required value="other">Other
                 <p>Grade:</p>
-                <form action="show_data.html">
                     <input type="radio" name="grade" id="pre-school" required value="pre-school">Pre-School
                     <input type="radio" name="grade" id="1st" required value="1st">1st
                     <input type="radio" name="grade" id="2nd" required value="2nd">2nd
@@ -70,25 +68,25 @@
                 <input type="text" id="phone" name="phone" placeholder="Enter your contact number" required><br><br>
                 <label for="email">Enter your Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-                <label required for="question">First Closest:</label>
+                <label for="question">First Closest:</label>
                   <select name="question" id="question">
-                      <option value="q1">None</option>
-                      <option value="q1">AJ Katzenmaier</option>
-                      <option value="q2">Marjorie P Hart</option>
-                      <option value="q3">Greenbay</option>
-                      <option value="q4">North Elementary</option>
-                      <option value="q5">Howard A Yeager</option>
-                      <option value="q6">South Elementary</option>
+                      <option value="none">None</option>
+                      <option value="katzenmaier">AJ Katzenmaier</option>
+                      <option value="marjorie_p_hart">Marjorie P Hart</option>
+                      <option value="greenbay">Greenbay</option>
+                      <option value="north_elementary">North Elementary</option>
+                      <option value="howard_a_yeager">Howard A Yeager</option>
+                      <option value="south_elementary">South Elementary</option>
                   </select> 
-                  <label required for="question2">Second Closest:</label>
+                  <label for="question2">Second Closest:</label>
                   <select name="question2" id="question2">
-                      <option value="q7">None</option>
-                      <option value="q8">AJ Katzenmaier</option>
-                      <option value="q9">Marjorie P Hart</option>
-                      <option value="q10">Greenbay</option>
-                      <option value="q11">North Elementary</option>
-                      <option value="q12">Howard A Yeager</option>
-                      <option value="q13">South Elementary</option>
+                      <option value="none">None</option>
+                      <option value="katzenmaier">AJ Katzenmaier</option>
+                      <option value="marjorie_p_hart">Marjorie P Hart</option>
+                      <option value="greenbay">Greenbay</option>
+                      <option value="north_elementary">North Elementary</option>
+                      <option value="howard_a_yeager">Howard A Yeager</option>
+                      <option value="south_elementary">South Elementary</option>
                   </select> 
               
                 <!-- Using Tables
@@ -100,7 +98,6 @@
                   </tr>
                   <tr>
                     <td>
-                      <form action="show_data.html">
                           <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">AJ Katzenmaier
                           <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">Marjorie P Hart<br>
                           <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">Greenbay
@@ -108,8 +105,7 @@
                           <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">Howard A Yeager
                           <input type="radio" name="first_closest_school" id="first_closest_school" required value="first_closest_school">South Elementary<br>
                     </td>
-                    <td>
-                        <form action="show_data.html">
+                    <td>                        
                             <input type="radio" name="second_closest_school" id="second_closest_school" required value="second_closest_school">AJ Katzenmaier
                             <input type="radio" name="second_closest_school" id="second_closest_school" required value="second_closest_school">Marjorie P Hart<br>
                             <input type="radio" name="second_closest_school" id="second_closest_school" required value="second_closest_school">Greenbay
@@ -120,19 +116,104 @@
                   </tr>
                 </table>-->
                 <p>What position(s) do you normally play? (check all that apply)</p>
-                <table>
-                    <td>
-                        <form required action="show_data.html">
-                            <input type="radio" name="position1" id="position" value="position">Forward
-                            <input type="radio" name="position2" id="position" value="position">Midfield<br>
-                            <input type="radio" name="position3" id="position" value="position">Defense
-                            <input type="radio" name="position4" id="position" value="position">Goalkeeper
-                            
-                      </td>
-                </table>
-
+                  <input type="checkbox" name="position1" id="forward" value="forward">Forward
+                  <input type="checkbox" name="position2" id="midfield" value="midfield">Midfield<br>
+                  <input type="checkbox" name="position3" id="defense" value="defense">Defense
+                  <input type="checkbox" name="position4" id="goalkeeper" value="goalkeeper">Goalkeeper
                 <br><br>
-                <input type="submit" value="Submit the form">
+                <label for="uniform">Already have a uniform</label>
+                  <select name="uniform" id="uniform">
+                      <option value="yes">yes</option>
+                      <option value="no">no</option>
+                  </select>
+                <br><br><br>
+                <table class="jersey">
+                  <tr>
+                    <th scope="col">Jersey Size:</th>
+                  </tr>
+                 <tr>
+                    <td>
+                        <input type="checkbox" name="youth_small" id="youth_small" /*required*/ value="youth_small">Youth Small
+                    </td>
+                    <td>
+                        <input type="checkbox" name="medium" id="medium" /*required*/ value="medium">Medium
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> 
+                        <input type="checkbox" name="youth_medium" id="youth_medium" /*require*/ value="youth_medium">Youth Medium<br>
+                    </td>
+                    <td> 
+                        <input type="checkbox" name="large" id="large" /*required*/ value="large">Large<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> 
+                     
+                      <input type="checkbox" name="youth_large" id="youth_large" /*required*/ value="youth_large">Youth Large<br>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="extra_large" id="extra_large" /*required*/ value="extra_large">Extra Large<br>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>
+                           <input type="checkbox" name="small" id="small" /*required*/ value="small">Small<br>
+                      </td>
+                  </tr>
+                </table>
+                <table class="shorts">
+                  <tr>
+                    <th scope="col">Shorts Size:</th>
+                  </tr>
+                  <tr>
+                      <td> 
+                          <input type="checkbox" name="youth_small2" id="youth_small2" required value="youth_small2">Youth Small
+                      </td>
+                      <td> 
+                          <input type="checkbox" name="medium2" id="medium2" required value="medium2">Medium
+                      </td>
+                  </tr>
+                  <tr>
+                      <td> 
+                          <input type="checkbox" name="youth_medium2" id="youth_medium2" required value="youth_medium2">Youth Medium<br>
+                      </td>
+                      <td> 
+                          <input type="checkbox" name="large2" id="large2" required value="large2">Large<br>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td> 
+                         <input type="checkbox" name="youth_large2" id="youth_large2" required value="youth_large2">Youth Large<br>
+                      </td>
+                      <td>
+                         <input type="checkbox" name="extra_large2" id="extra_large2" required value="extra_large2">Extra Large<br>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                         <input type="checkbox" name="small2" id="small2" required value="small2">Small<br>
+                      </td>
+                  </tr>
+                </table>
+                <div class="permission">
+                <h3>Permission to Play</h3>
+                <p>
+                    I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+                    Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+                    accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+                    employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+                    on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+                    sponsored activities, which transportation.
+                </p>
+               
+                   <input type="checkbox" name="agree" id="agree" required value="agree"> By ticking this box, you hereby agree and authorize the above. In addition, by signing below, you also acknowledge that you have read the
+                    cancellation policy and agree to its terms.<br><br>
+
+                    <label for="date">Todays date:</label>
+                    <input type="text" id="date" name="date" placeholder=" mm/dd/yyyy" required><br><br>    
+                </div>
+                <input type="submit" class="submit" value="Submit the form">
             </form>
         </article>
   </main>
