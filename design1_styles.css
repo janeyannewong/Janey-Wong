@@ -61,15 +61,19 @@ h2{
 .menu {
   position: relative;
   bottom: 150px;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   flex-direction: column;
+  max-width: 150px;
+}
+li.links {
+  max-width: 100px;
 }
 
 .links{
   padding: 20px;
   position: relative;
-  top: -90px;
+  top: -50px;
 }
 
 .contact{
@@ -202,10 +206,6 @@ th, td{
 }
 
 /*Registration Form Page*/
-article{
-  z-index: 4;
-}
-
 .shorts {
   display: flex;
   justify-content: flex-end;
